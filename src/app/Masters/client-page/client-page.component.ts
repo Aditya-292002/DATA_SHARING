@@ -4,10 +4,14 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-client-page',
   standalone: true,
-  imports: [CardModule,InputTextModule,CheckboxModule,ReactiveFormsModule,FormsModule,MultiSelectModule],
+  imports: [CommonModule,
+    CardModule,InputTextModule,CheckboxModule,ReactiveFormsModule,FormsModule,MultiSelectModule],
   templateUrl: './client-page.component.html',
   styleUrl: './client-page.component.css'
 })
@@ -21,5 +25,6 @@ export class ClientPageComponent {
     {name: 'Istanbul', code: 'IST'},
     {name: 'Paris', code: 'PRS'}
 ];
+
 selectedCities:any;
 }
