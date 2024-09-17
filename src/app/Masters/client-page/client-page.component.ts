@@ -14,4 +14,12 @@ import { MultiSelectModule } from 'primeng/multiselect';
 export class ClientPageComponent {
   CLIENT_NAME:string = '';
   ACTIVE:boolean = true;
+  cities = [
+    {name: 'New York', code: 'NY'},
+    {name: 'Rome', code: 'RM'},
+    {name: 'London', code: 'LDN'},
+    {name: 'Istanbul', code: 'IST'},
+    {name: 'Paris', code: 'PRS'}
+];
+selectedCities:any;
 }
