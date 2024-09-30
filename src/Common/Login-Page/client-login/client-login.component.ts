@@ -58,6 +58,9 @@ export class ClientLoginComponent {
     
     this.apiService.post(`${this.urlService.login}`,data).then((res:any)=>{
      console.log('res',res);
+     if(res.RESULTLIST[0].FLAG==1){
+      this.router.navigate(['/user/dashboard']);
+     }
    //  let Image =  res.MSG.replace('data:image/;base64,', '')
     // this.logo = 'data:image/png;base64,' + Image
      //this.logo=res.MSG;
