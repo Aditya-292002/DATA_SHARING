@@ -24,7 +24,7 @@ bankName: string | null = null;
     this.RouterUrl = this.ActivatedRoute.url;
     this.ActivatedRoute.params.subscribe(params => {
       this.bankName = params['bankName'];
-      // console.log('bankName ->' , this.bankName)
+       console.log('bankName ->' , this.bankName)
     });
    }
 
