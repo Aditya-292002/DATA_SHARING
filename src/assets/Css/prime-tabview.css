@@ -1,15 +1,18 @@
 /* card css */
 .p-card {
     box-shadow: 0 .1875rem .5rem 0 rgba(34,48,62,.1) !important;
-  
 }
 .p-card .p-card-title {
     font-size: 1rem !important;
     margin-bottom: 0rem !important;
     font-weight: 600 !important ;
     border-bottom: 1px solid #64748b2b;
-
 }
 .p-card .p-card-content {
     padding: 0.8rem 0 !important;
+}
+
+/* breadcrumb */
+.p-breadcrumb {
+    background: transparent;
 }

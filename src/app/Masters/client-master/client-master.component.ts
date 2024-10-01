@@ -8,12 +8,13 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
 @Component({
   selector: 'app-client-master',
   standalone: true,
   imports: [FormsModule,CardModule,CalendarModule,InputTextModule,
     DropdownModule,MultiSelectModule,RadioButtonModule,CheckboxModule,
-    ButtonModule],
+    ButtonModule,BreadcrumbModule ],
   templateUrl: './client-master.component.html',
   styleUrl: './client-master.component.css'
 })
@@ -30,5 +31,11 @@ export class ClientMasterComponent {
 SELECTEDCITY:any;
 ingredient!: string;
 pizza: string[] = [];
+items = [ 
+  { label: 'Client List',routerLink: '/clientlist' }, 
+  { label: 'Client Master' }, 
+];
+
+home = { icon: 'pi pi-home', routerLink: '/dashboard' };
 
 }
